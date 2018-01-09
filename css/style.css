@@ -47,5 +47,10 @@ table {
 	border-spacing: 0;
 }
 html {
-  background-color: blue;
+  background-color: #f5f6f8;
+}
+
+header {
+  /*background-color: black;*/
+  background-image: url(img/bg/bg_header.png);
 }
