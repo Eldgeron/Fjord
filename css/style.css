@@ -46,11 +46,77 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+
 html {
   background-color: #f5f6f8;
+	font-family: 'Montserrat', sans-serif;
 }
 
 header {
-  /*background-color: black;*/
-  background-image: url(img/bg/bg_header.png);
+	height: 862pt;
+	background-image: url("../img/bg/bg_header_1.png");
+	 background-repeat: no-repeat;
+}
+
+h1 {
+	font-family: 'Montserrat Hairline', arial;
+  font-size: 6rem;
+}
+
+h3 {
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+h4 {
+		font-size: 1rem;
+		font-weight: 300;
+}
+
+p {
+
+	font-size: 1rem;
+	color: rgba(35, 35, 35, 0.5);
+}
+
+.logo_nav{
+	height: 120pt;
+	padding-top: 40pt;
+}
+
+div.logo {
+	float:left;
+	margin-left: 314px;
+	margin-right: 230px;
+}
+
+div.logo_nav a{
+	font-size: 1rem;
+	text-transform: uppercase;
+	margin: 50px 13px;
+}
+
+.mount{
+	margin-left: 314px;
+	margin-top: 40px;
+	width: 400pt;
+}
+.caps {
+	text-transform: uppercase;
+}
+
+ul.block {
+	width: 100%;
+}
+
+ul.block li {
+	display: inline-block;
+	margin: 10pt 35pt 10pt 35pt;
+	width: calc(30% - 70px);
+}
+
+.icon {
+	width: 60.7pt;
 }
