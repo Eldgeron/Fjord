@@ -55,7 +55,7 @@ html {
 }
 
 header {
-	height: 862pt;
+	height: 777pt;
 	background-image: url("../img/bg/bg_header_1.png");
 	 background-repeat: no-repeat;
 }
@@ -66,8 +66,9 @@ h1 {
 }
 
 h3 {
-	font-size: 2rem;
+	font-size: 1.2rem;
 	font-weight: 300;
+	line-height: 22px;
 }
 
 h4 {
@@ -77,19 +78,14 @@ h4 {
 
 p {
 
-	font-size: 1rem;
+	font-size: 1.2rem;
+	line-height: 22px;
 	color: rgba(35, 35, 35, 0.5);
 }
 
 .logo_nav{
-	height: 120pt;
-	padding-top: 40pt;
-}
-
-div.logo {
-	float:left;
-	margin-left: 314px;
-	margin-right: 230px;
+	height: 120px;
+	padding-top: 40px;
 }
 
 div.logo_nav a{
@@ -98,13 +94,24 @@ div.logo_nav a{
 	margin: 50px 13px;
 }
 
+div.logo {
+	float:left;
+	margin-left: 314px;
+	margin-right: 230px;
+}
+
 .mount{
 	margin-left: 314px;
 	margin-top: 40px;
-	width: 400pt;
+	width: 400px;
 }
+
 .caps {
 	text-transform: uppercase;
+}
+
+.center{
+	text-align: center;
 }
 
 ul.block {
@@ -113,10 +120,24 @@ ul.block {
 
 ul.block li {
 	display: inline-block;
-	margin: 10pt 35pt 10pt 35pt;
-	width: calc(30% - 70px);
+	margin: 0pt 35px;
+	/*width: calc(20% - 70px);*/
+	width: 248px;
+	vertical-align: top;
+}
+
+ul.block li *{
+	margin-bottom: 20px;
 }
 
 .icon {
-	width: 60.7pt;
+	width: 60.7px;
+}
+
+.build {
+	height: 412.5pt;
+	vertical-align: middle;
+}
+div.build * {
+	color: #232323;
 }
