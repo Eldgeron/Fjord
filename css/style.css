@@ -55,7 +55,7 @@ html {
 }
 
 header {
-	height: 777pt;
+	height: 777px;
 	background-image: url("../img/bg/bg_header_1.png");
 	 background-repeat: no-repeat;
 }
@@ -63,6 +63,8 @@ header {
 h1 {
 	font-family: 'Montserrat Hairline', arial;
   font-size: 6rem;
+	line-height: 100px;
+	letter-spacing: 50%;
 }
 
 h3 {
@@ -84,7 +86,7 @@ p {
 }
 
 .logo_nav{
-	height: 120px;
+	height: 150px;
 	padding-top: 40px;
 }
 
@@ -101,9 +103,9 @@ div.logo {
 }
 
 .mount{
-	margin-left: 314px;
-	margin-top: 40px;
-	width: 400px;
+	margin-left: 311px;
+	margin-top: 70px;
+	width: 600px;
 }
 
 .caps {
@@ -135,9 +137,38 @@ ul.block li *{
 }
 
 .build {
-	height: 412.5pt;
+	background-color: #ffffff;
+	height: 412.5px;
 	vertical-align: middle;
 }
 div.build * {
 	color: #232323;
+}
+
+.slideshow {
+	background-color: #26e6e6;
+	height: 898.5px;
+}
+
+.list{
+	/*width: 383.4pt;*/
+	width: calc(24% - 62.4px);
+	background-color: #ffffff;
+	padding: 37.4px 31.2px;
+}
+
+ul.list * {
+	margin: 0 0 30px 0;
+}
+
+footer{
+	height: 857px;
+	background-image: url("../img/bg/bg_footer.png");
+	 background-repeat: no-repeat;
+}
+
+.footer {
+	width: 967px;
+	height: 278px;
+	background-color: #000000;
 }
