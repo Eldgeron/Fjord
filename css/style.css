@@ -52,60 +52,76 @@ table {
 html {
   background-color: #f5f6f8;
 	font-family: 'Montserrat', sans-serif;
+	position: relative;
 }
 
 header {
-	height: 777px;
+	width: 100vw;
+  height: 667pt;
 	background-image: url("../img/bg/bg_header_1.png");
 	 background-repeat: no-repeat;
+
+}
+
+section>header {
+	background-image: none;
+	background-color: #fff;
+	height: auto;
+	/*padding: 113px 0;*/
 }
 
 h1 {
 	font-family: 'Montserrat Hairline', arial;
-  font-size: 6rem;
-	line-height: 100px;
-	letter-spacing: 50%;
+  font-size: 4.5rem;
+	line-height: 96px;
+	letter-spacing: 0.23rem;
 }
 
 h3 {
-	font-size: 1.2rem;
+	font-size: 0.9rem;
 	font-weight: 300;
 	line-height: 22px;
 }
 
 h4 {
-		font-size: 1rem;
+		font-size: 0.78rem;
 		font-weight: 300;
+		padding-left: 7px;
 }
 
 p {
 
-	font-size: 1.2rem;
+	font-size: 0.8rem;
 	line-height: 22px;
 	color: rgba(35, 35, 35, 0.5);
 }
 
 .logo_nav{
-	height: 150px;
-	padding-top: 40px;
+	position: fixed;
+	width: 100%;
+	top: 45px;
+	left: 20vw;
 }
 
 div.logo_nav a{
-	font-size: 1rem;
+	font-size: 0.8rem;
 	text-transform: uppercase;
-	margin: 50px 13px;
 }
 
 div.logo {
-	float:left;
-	margin-left: 314px;
-	margin-right: 230px;
+	display: inline-block;
+	/*width: calc(23% - 13%);*/
+	width: 16vw;
 }
-
+nav {
+	display: inline-block;
+	/*width: calc(70% - 15%);*/
+	width: 50vw;
+}
 .mount{
-	margin-left: 311px;
-	margin-top: 70px;
-	width: 600px;
+	width: 426px;
+	padding-left: 20vw;
+	padding-top: 270px;
 }
 
 .caps {
@@ -117,14 +133,13 @@ div.logo {
 }
 
 ul.block {
-	width: 100%;
+	margin: 0 26%;
 }
 
 ul.block li {
 	display: inline-block;
 	margin: 0pt 35px;
-	/*width: calc(20% - 70px);*/
-	width: 248px;
+	width: calc(31% - 74px);
 	vertical-align: top;
 }
 
@@ -137,9 +152,7 @@ ul.block li *{
 }
 
 .build {
-	background-color: #ffffff;
-	height: 412.5px;
-	vertical-align: middle;
+	background-color: #fff;
 }
 div.build * {
 	color: #232323;
@@ -151,7 +164,7 @@ div.build * {
 }
 
 .list{
-	/*width: 383.4pt;*/
+	width: 383.4pt;
 	width: calc(24% - 62.4px);
 	background-color: #ffffff;
 	padding: 37.4px 31.2px;
@@ -168,7 +181,6 @@ footer{
 }
 
 .footer {
-	width: 967px;
 	height: 278px;
 	background-color: #000000;
 }
