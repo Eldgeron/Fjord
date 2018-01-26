@@ -2,8 +2,9 @@
 <html>
 
   <head>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="https://use.fontawesome.com/44cc632ed4.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
 
     <meta charset="UTF-8">
@@ -13,7 +14,7 @@
 
   <body>
     <!--HEADER-->
-    <header>
+    <header id="main_header">
         <!--Header menu-->
         <div class="logo_nav">
           <!--Logo black-->
@@ -23,27 +24,31 @@
             </a>
           </div>
           <!--Main menu-->
-          <nav>
-            <a href='#top'>Home</a>
-            <a href="#services">Services</a>
-            <a href="#features">Features</a>
-            <a href="#platform">Platform</a>
-            <a href="#gallery">Gallery</a>
-            <a href='#prices'>Prices </a>
-            <!--Small button-->
-            <a href="project.html">Start a project</a>
-            <!--Burger menu-->
-            <i>MENU</i>
-          </nav>
+          <div class="nav_wrap">
+            <nav>
+              <a href='#top'>Home</a>
+              <a href="#services">Services</a>
+              <a href="#features">Features</a>
+              <a href="#platform">Platform</a>
+              <a href="#gallery">Gallery</a>
+              <a href='#prices'>Prices </a>
+              <!--Small button-->
+              <a href="project.html" class="button">Start a project</a>
+              <!--Burger menu-->
+              <i>MENU</i>
+            </nav>
+          </div>
         </div>
         <!--Header-->
         <div class="mount">
-          <h1 class="caps">
-            Get some fresh air
-          </h1>
-          <h4 class="caps">
-            Fjord - modern landing page
-          </h4>
+          <div class="mount_wrap">
+            <h1 class="title">
+              Get some fresh air
+            </h1>
+            <h4 class="subtitle">
+              Fjord - modern landing page
+            </h4>
+          </div>
         </div>
       </header>
 
@@ -51,11 +56,10 @@
     <main>
 
       <!--SERVICES-->
-      <section class="services">
+      <section id="services">
           <!--Features with big icons-->
-          <ul class="block center">
-            <li>
-              <img class="icon" src="img/icon/mail.png" alt="Mail">
+            <ul class="block servs">
+            <li class="icon_img mail">
               <h3 class="caps">
                 Get a customized email adress and more
               </h3>
@@ -64,8 +68,7 @@
               <a href="">Learn more </a>
             </li>
 
-            <li>
-              <img class="icon" src="img/icon/edit.png" alt="Edit">
+            <li class="icon_img edit">
               <h3 class="caps">
                 40 Million high quality images
               </h3>
@@ -74,68 +77,70 @@
               have fallen to the ground.</p>
               <a href="">Learn more </a>
             </li>
-            <li>
-              <img class="icon" src="img/icon/card.png"alt="Card">
+
+            <li class="icon_img card">
               <h3 class="caps">
                 Create a simple Logo <span> new </span>
               </h3>
               <p>She gave my mother such a turn, that I have always been convinced
               I am indebted to Miss Betsey for having been born on a Friday.</p>
-              <a href="">Get Started </a>
+              <a href="" class="black_hover">Get Started </a>
             </li>
           </ul>
           <!--SLIDESHOW BLOCK-->
           <!--Create a beautiful website-->
           <div class="slideshow">
-            <div>
-              <img src="" alt="iPhone from Shakuro">
+            <div class="list_wrapper">
+              <div>
+                <img src="img/photo/iPhone.png" alt="iPhone from Shakuro">
+              </div>
+              <ul class="list">
+                <li>
+                  <img class="icon" src="img/icon/browser.png" alt="Browser">
+                    <h4>
+                      Create a beautiful website
+                    </h4>
+                    <p>Whether you want to create a blog, eCommerce store, portfolio,
+                    or all of the above, you can express your idea with a website powered
+                    by our elegant yet intuitive platform.</p>
+                </li>
+                <li>
+                  <img class="icon" src="img/icon/Briefcase.png" alt="Briefcase">
+                    <h4>
+                      Make your our business
+                    </h4>
+                    <p>From goods to services, every business needs a space online to
+                      bring in customers.</p>
+                </li>
+                <li>
+                  <img class="icon" src="img/icon/edit.png" alt="Edit">
+                    <h4>
+                      Be artist
+                    </h4>
+                    <p>An artist should always have control over their creative
+                    process.</p>
+                </li>
+                <li>
+                  <a href="">Get Started </a>
+                </li>
+              </ul>
             </div>
-            <ul class="list">
-              <li>
-                <img class="icon" src="img/icon/browser.png" alt="Browser">
-                  <h4>
-                    Create a beautiful website
-                  </h4>
-                  <p>Whether you want to create a blog, eCommerce store, portfolio,
-                  or all of the above, you can express your idea with a website powered
-                  by our elegant yet intuitive platform.</p>
-              </li>
-              <li>
-                <img class="icon" src="img/icon/Briefcase.png" alt="Briefcase">
-                  <h4>
-                    Make your our business
-                  </h4>
-                  <p>From goods to services, every business needs a space online to
-                    bring in customers.</p>
-              </li>
-              <li>
-                <img class="icon" src="img/icon/edit.png" alt="Edit">
-                  <h4>
-                    Be artist
-                  </h4>
-                  <p>An artist should always have control over their creative
-                  process.</p>
-              </li>
-              <li>
-                <a href="">Get Started </a>
-              </li>
-            </ul>
         </div>
       </section>
 
       <!--FEATURES-->
       <section class="features">
         <!--Build it beautiful title-->
-        <header class="build center">
-          <h1>
+        <header class="section_header">
+          <h1 class="title">
             Build it beautiful
           </h1>
-          <p>Sometimes bold ideas don't require a full website.
+          <p class="subtitle">Sometimes bold ideas don't require a full website.
           That's why Cover Pages can be used to convey a single idea in a
           beautiful way.</p>
         </header>
         <!--Features without icons-->
-        <ul class="block center">
+        <ul class="block">
           <li>
             <h4>
               Dummy Content
@@ -165,15 +170,17 @@
           </li>
         </ul>
         <!--iPad block-->
-        <div>
-          <h1>
-          This will change everything
-          </h1>
-          <p>Your eCommerce website is just the start. Whether you are an
-          established business or on the brink of a new idea, Squarespace
-          gives you the tools to take your business from online store to
-          recognized brand.</p>
-          <a href=""><button type="button" name="button">Get Started</button></a>
+        <div class="slideshow">
+          <div class="">
+            <h1>
+            This will change everything
+            </h1>
+            <p>Your eCommerce website is just the start. Whether you are an
+            established business or on the brink of a new idea, Squarespace
+            gives you the tools to take your business from online store to
+            recognized brand.</p>
+            <a href=""><button type="button" name="button">Get Started</button></a>
+          </div>
         </div>
         <!--Slideshow-->
         <div>
@@ -293,8 +300,8 @@
 
       <!--PRICES-->
       <section class="prices center">
-        <header>
-          <h1>
+        <header class="section_header">
+          <h1 class="title">
             Join over 1 million customers
           </h1>
         </header>
