@@ -10,7 +10,6 @@ body {
   background-color: #f5f6f8;
   font-family: "Besom", arial, sans-serif;
 	font-family: 'Montserrat', sans-serif;
-
 	font-weight: 300;
 }
 
@@ -22,27 +21,7 @@ a {
 }
 
 /*TEXT*/
-h1 {
-	font-family: 'Montserrat Hairline', arial;
-  font-size: 4.5rem;
-	line-height: 5.5rem;
-	letter-spacing: 0.18rem;
-}
-
-/*h3 {
-	font-size: 0.9rem;
-	font-weight: 300;
-	line-height: 22px;
-}
-
-h4 {
-		font-size: 0.78rem;
-		font-weight: 300;
-		padding-left: 7px;
-}*/
-
 p {
-
 	font-size: 0.8rem;
 	line-height: 22px;
 	color: rgba(35, 35, 35, 0.5);
@@ -63,23 +42,15 @@ p {
   line-height: 1.5em;
   letter-spacing: 1.5px;
   text-indent: 6px;
-
  }
 
- .subtitle.sml h4{
-   font-size: 0.7em;
- }
+.list_title {
+	font-size: 0.9em;
+  line-height: 1.5em;
+}
 
- .subtitle.norm {
-   font-size: 1.2em;
-   font-weight: 500;
-   text-transform: none;
-   letter-spacing: normal;
-   color: #000;
-
- }
-.caps {
-	text-transform: uppercase;
+.block.servs .list_title {
+  text-transform: uppercase;
 }
 
 /*BUTTONS*/
@@ -152,22 +123,21 @@ nav a{
 	left: 20vw;
 }
 
-
-
-
 /*MAIN*/
 
-ul.block {
-  padding: 2em 20%;
+section {
+  padding: 7em 14vw;
 }
-
+section#services {
+  padding-top: 0;
+}
 .block li {
   display: inline-block;
 	vertical-align: top;
-	width: calc(27% - 4px);
+	width: calc(23% - 4px);
 	text-align: center;
-	padding: 2em 1.5%;
-	margin: 0 1.5%;
+	padding: 2em 2%;
+	margin: 0 2%;
 }
  .block.servs li:before {
    font-family: FontAwesome;
@@ -177,33 +147,74 @@ ul.block {
    margin-bottom: 0.4em;
  }
 
-
-
 .block li *{
   margin-bottom: 2em;
 }
 
-/*SlideShow block*/
-div.slideshow {
+.block.servs .list_title {
+  min-height: 2em;
+  height: 2em;
+}
 
+.block.servs p {
+  min-height: 7em;
+  height: 7em;
+}
+
+/*SlideShow block*/
+#add_srv {
+  padding: 0;
+  background: url("../img/bg/bg_iPhone.png") no-repeat left bottom;
+  background-size: cover;
+  text-align: right;
 }
 
 div.list_wrapper {
-  background-color: #26e6e6;
-  position: relative;
-  z-index: 20;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+  text-align: left;
+  min-width: calc(28vw - 50px);
+  width: calc(28vw - 50px);
+  padding: 25px;
+  margin: 7em 11vw 7em 0vw;
 }
 
-.list_wrapper ul.list {
-  width: 383px;
-  background-color: #ffffff;
-  position: absolute;
-  top: 8rem;
-  right: 15em;
-  z-index: auto;
+.list_wrapper .list li {
+  display: block;
+	width: calc(100% - 2em);
+	text-align: left;
+	padding: 0;
+  margin: 1em;
 }
 
-/*Features*/
+.text_wrap {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 6em);
+  padding-left: 1em;
+}
+
+.list.servs li:before {
+  font-family: FontAwesome;
+  font-size: 4em;
+  color: #bbb;
+  display: inline-block;
+  margin-bottom: 0.4em;
+}
+
+.list.servs li {
+  padding-bottom: 3em;
+  padding-top: 0;
+}
+
+.list_wrapper .list.servs last-child{
+  content: "Get started"
+  /*width:100%;
+  background-color: red;*/
+}
+
+/*
 .section_header{
   height: 20em;
   background: #fff;
@@ -220,17 +231,12 @@ section.features ul.block li{
   text-align: left;
 }
 
-.list.servs li:before {
-  font-family: FontAwesome;
-  font-size: 4em;
-  color: #bbb;
-  display: inline-block;
-  margin-bottom: 0.4em;
-}
 
 
 
 
+
+/*Features*/
 /*iPad block*/
 .iPad_slide {
   background-color: #000;
@@ -255,16 +261,16 @@ section.features ul.block li{
 .block.servs li.icon_img.card:before{
   content: "\f25b";
 }
-
-.slideshow ul.list li.icon_img.browser:before {
+/*slideshow block*/
+.list.servs li.icon_img.browser:before {
    content: "\f2d0";
 }
 
-.slideshow ul.list li.icon_img.briefcase:before {
+.list.servs li.icon_img.briefcase:before {
    content: "\f0b1";
 }
 
-.slideshow ul.list li.icon_img.edit:before {
+.list.servs li.icon_img.edit:before {
    content: "\f044";
 }
 
