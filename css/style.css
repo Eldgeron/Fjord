@@ -28,13 +28,22 @@ p {
 }
 
 .title{
-	text-transform: uppercase;
-	font-size: 4em;
-  line-height: 1.2em;
+  text-transform: uppercase;
+  font-size: 4.5em;
+  line-height: 1.1em;
   font-weight: 200;
-  letter-spacing: 7px;
+  letter-spacing: 2.5px;
   margin-bottom: 0.3em;
+}
 
+.title_light{
+  text-transform: uppercase;
+  font-size: 4.5em;
+  line-height: 1.1em;
+  font-weight: 200;
+  text-transform: none;
+  margin-bottom: 0.5em;
+  letter-spacing: normal;
 }
 .subtitle{
 	text-transform: uppercase;
@@ -47,6 +56,7 @@ p {
 .list_title {
 	font-size: 0.9em;
   line-height: 1.5em;
+  font-weight: 500;
 }
 
 .block.servs .list_title {
@@ -159,6 +169,22 @@ section#services {
 .block.servs p {
   min-height: 7em;
   height: 7em;
+  overflow: hidden;
+}
+
+a.button_active {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  line-height: 2.2em;
+}
+
+a.button_active:hover{
+  /*width: 100%;
+  line-height: 2.2em;
+  background-color: #000;
+  color: #bbb;*/
+  font-weight: 600;
 }
 
 /*SlideShow block*/
@@ -178,6 +204,7 @@ div.list_wrapper {
   width: calc(28vw - 50px);
   padding: 25px;
   margin: 7em 11vw 7em 0vw;
+  position: relative;
 }
 
 .list_wrapper .list li {
@@ -208,41 +235,126 @@ div.list_wrapper {
   padding-top: 0;
 }
 
-.list_wrapper .list.servs last-child{
-  content: "Get started"
-  /*width:100%;
-  background-color: red;*/
+.list_wrapper .list.servs h3.list_title{
+  padding-bottom: 1em;
+  padding-left: 0;
 }
 
-/*
-.section_header{
-  height: 20em;
-  background: #fff;
-  padding-top: 2em;
+.button.black {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #000;
+  color: #fff;
 }
 
-.section_header h1.title,
-p.subtitle {
+.list_wrapper .list.servs a.button.black{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-transform: uppercase;
   text-align: center;
-  text-transform: none;
+  font-size: 0.7rem;
+  line-height: 3.2rem;
 }
 
-section.features ul.block li{
+/*FEATURES*/
+#features {
+  margin: 0;
+  padding: 0;
+}
+
+.section_header{
+  margin: 0;
+  text-align: center;
+  background-color: #fff;
+  padding: 7em 14vw;
+}
+
+#features .section_header .title_light{
+  text-transform: none;
+  margin-bottom: 0.5em;
+  letter-spacing: normal;
+}
+
+#features .section_header p.list_title {
+  padding: 0 23em;
+  line-height: 2em;
+}
+
+#features ul.block{
+  padding: 7em 10vw 7em 16vw;
+}
+
+.block li.feature_wrap{
   text-align: left;
 }
-
-
-
-
-
-
-/*Features*/
-/*iPad block*/
-.iPad_slide {
-  background-color: #000;
-  margin: 0 10%;
-  padding: 10em;
+.feature_wrap p {
+  min-height: 7em;
+  height: 7em;
+  overflow: hidden;
 }
+
+/*iPad block*/
+#features div.slideshow {
+  background-color: #000;
+  margin: 0 5vw;
+  padding: 10em;
+  color: #fff;
+  position: relative;
+  margin-bottom: 10em;
+}
+
+.iPad_slide{
+  width: 60%;
+}
+
+section#features div.slideshow p{
+  display: inline-block;
+  width: 20vw;
+  margin-right: calc(100% - 20vw);
+  margin-bottom: 8rem;
+  color: #fff;
+}
+
+a.button_blue {
+  background-color: #26e6e6;
+  border: 2px solid #26e6e6;
+  border-radius: 25px;
+  color: #000;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+div.iPad_img{
+  position: absolute;
+  top: 19em;
+  right: -9em;
+}
+
+/*PLATFORM*/
+#platform {
+  text-align: center;
+}
+
+div.platform_wrap ul.block.servs li {
+  display: inline-block;
+  text-align: left;
+}
+.title_wrap {
+  display: inline-block;
+  width: 41vw;
+  text-align: center;
+  font-weight: 600;
+}
+
+.title_wrap *{
+  margin-bottom: 2em;
+}
+
 
 
 /*Icons*/
@@ -340,7 +452,54 @@ ul.quotes li {
 
 .button_box .button{
   vertical-align: middle;
+  background-color: #26e6e6;
+  padding: 0.5em 1em;
+  border-radius: 3px;
 }
+
+/*PRICES*/
+section#prices {
+  margin: 0;
+  padding: 0;
+}
+
+div.prices_wrap {
+  padding:7em 14vw;
+}
+
+.plan_active:hover {
+  background-color: black;
+  color: #fff;
+}
+
+#prices .plan_active:hover p{
+  color: #fff;
+}
+
+#prices .plan_active:hover a.button_active{
+  vertical-align: middle;
+  background-color: #26e6e6;
+  padding: 0.5em 1em;
+  border-radius: 25px;
+  color: #000;
+}
+
+.plan_active p{
+  min-height: 7rem;
+  height: 7rem;
+  overflow: hidden;
+}
+
+p.big_price {
+  font-size: 3em;
+  font-weight: 900;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 0.5em;
+
+}
+
+
 
 /*FOOTER*/
 .footer{
