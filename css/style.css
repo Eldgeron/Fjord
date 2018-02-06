@@ -177,13 +177,11 @@ a.button_active {
   vertical-align: middle;
   width: auto;
   line-height: 2.2em;
+  font-size: 0.8em;
+  text-transform: uppercase;
 }
 
 a.button_active:hover{
-  /*width: 100%;
-  line-height: 2.2em;
-  background-color: #000;
-  color: #bbb;*/
   font-weight: 600;
 }
 
@@ -262,6 +260,7 @@ div.list_wrapper {
 #features {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .section_header{
@@ -489,6 +488,7 @@ div.prices_wrap {
   padding: 0.5em 2em;
   border-radius: 25px;
   color: #000;
+  font-weight: 400;
 }
 
 .plan_active p{
@@ -510,19 +510,25 @@ p.big_price {
 
 /*FOOTER*/
 #footer {
-  width: 100vw;
-  padding: 1em;
+  height: 80vh;
   color: #fff;
   vertical-align: top;
-  background-image: url('../img/bg/bg_footer.png');
+  background: url('../img/bg/bg_footer.png') no-repeat top left;
   background-size: cover;
+  position: relative;
+}
+
+#footer p{
+  color: #fff;
 }
 
 .footer{
   background-color: #000;
   display: inline-block;
+  position: absolute;
+  top: 40vh;
+  left: 20vw;
   width: 56%;
-  margin: 5em 20em;
   padding: 2em;
 }
 
@@ -535,16 +541,38 @@ p.big_price {
 .footer_nav {
   display: inline-block;
   vertical-align: top;
-  width: calc(50% - 4px);
+  width: calc(55% - 4px);
+  text-transform: uppercase;
+  font-size: 0.8em;
 }
 
 .f_nav_wrap {
   display: inline-block;
   vertical-align: top;
+  width: calc(33% - 4px);
+}
+
+li.f_nav_wrap a{
+  display: inline-block;
+  width: 100%;
+  padding: 0.2em 0.5em;
+  margin: 0.3em 0.5em;
 }
 
 .ident_wrap {
   display: inline-block;
   vertical-align: top;
-  width: calc(40% - 4px);
+  width: calc(35% - 4px);
+  text-align: right;
+}
+
+.creator_wrap {
+  margin-bottom: 6em;
+}
+
+.social {
+  width: 30px;
+  height: 30px;
+  padding: 0.3em;
+  margin: 0.3em;
 }
