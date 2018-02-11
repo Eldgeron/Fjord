@@ -4,20 +4,11 @@
   src: url(../fonts/Besom-free-font.otf) format("opentype");
 }
 
-
-
 body {
   background-color: #f5f6f8;
   font-family: "Besom", arial, sans-serif;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
-}
-
-a {
-	display: inline-block;
-	vertical-align: top;
-	text-decoration: none;
-	color: inherit;
 }
 
 /*TEXT*/
@@ -63,21 +54,146 @@ p {
   text-transform: uppercase;
 }
 
+
 /*BUTTONS*/
+  /*header*/
+  .main_nav a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .button.black {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #000;
+    color: #fff;
+  }
+
+  #main_header .nav_wrap .button_wrap a.button.black {
+    text-transform: uppercase;
+  	font-size: 0.7rem;
+  	line-height: 2.2rem;
+  	margin: 0 0.5em;
+    padding: 0 1em;
+  	color: #fff;
+    box-shadow: 0.2em 0.2em rgba(0, 0, 0, 0.5);
+    min-width: 10em;
+    width: 10em;
+  }
+
+  #main_header .nav_wrap a.button.black:active {
+    transform: translate(0.2em, 0.2em);
+    box-shadow: none;
+  }
+
+  /*main*/
+  a.button_active {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  line-height: 2.2em;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+  a.button_active:hover{
+  font-weight: 600;
+}
+
+  /*slideshow*/
+  .list_wrapper .list.servs a.button.black{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 3.2rem;
+  }
+
+  /*iPad*/
+  a.button_blue {
+    background-color: #26e6e6;
+    border: 2px solid #26e6e6;
+    border-radius: 25px;
+    color: #000;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    margin: 0.5em;
+    cursor: pointer;
+  }
+
+  /*gallery*/
+  .button_box{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      background-color: rgba(0,0,0,0.5);
+      display: none;
+    }
+
+  .block_img li:hover .button_box {
+      display: block;
+    }
+
+  .button_box:before{
+      content: '';
+      width: 1px;
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+  .button_box .button{
+      vertical-align: middle;
+      background-color: #26e6e6;
+      padding: 0.5em 1em;
+      border-radius: 3px;
+    }
+
+  /*prices*/
+  #prices .plan_active a.button_active {
+      vertical-align: middle;
+      text-transform: uppercase;
+      padding: 0.5em 2em;
+      border-radius: 25px;
+      font-weight: 400;
+    }
+
+  #prices .plan_active:hover a.button_active{
+      transition: 1s;
+      vertical-align: middle;
+      text-transform: uppercase;
+      background-color: #26e6e6;
+      padding: 0.5em 2em;
+      border-radius: 25px;
+      color: #000;
+      font-weight: 400;
+    }
+
+/*Burger button*/
+i.burger {
+  display: none;
+}
 
 /*LINKS and NAVIGTION*/
+a {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: inherit;
+}
+
 nav {
   display: inline-block;
   vertical-align: top;
+  width: calc(80% - 4px)
 }
-
-.main_nav a:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-/*IMAGES*/
-
 
 /*HEADER*/
 #main_header{
@@ -110,6 +226,11 @@ nav {
 	text-align: right;
 }
 
+.button_wrap {
+  display: inline-block;
+  width: calc(20% - 4px);
+}
+
 nav a{
 	text-transform: uppercase;
 	font-size: 0.7rem;
@@ -134,13 +255,11 @@ nav a{
 }
 
 /*MAIN*/
-
 section {
-  padding: 7em 14vw;
+  padding: 7em 14%;
 }
-section#services {
-  padding-top: 0;
-}
+
+/*SERVICES*/
 .block li {
   display: inline-block;
 	vertical-align: top;
@@ -152,7 +271,7 @@ section#services {
  .block.servs li:before {
    font-family: FontAwesome;
    font-size: 4em;
-   color: #bbb;
+   color: #26e6e6;
    display: inline-block;
    margin-bottom: 0.4em;
  }
@@ -172,18 +291,6 @@ section#services {
   overflow: hidden;
 }
 
-a.button_active {
-  display: inline-block;
-  vertical-align: middle;
-  width: auto;
-  line-height: 2.2em;
-  font-size: 0.8em;
-  text-transform: uppercase;
-}
-
-a.button_active:hover{
-  font-weight: 600;
-}
 
 /*SlideShow block*/
 #add_srv {
@@ -198,10 +305,10 @@ div.list_wrapper {
   vertical-align: top;
   background-color: #fff;
   text-align: left;
-  min-width: calc(28vw - 50px);
-  width: calc(28vw - 50px);
+  min-width: calc(28% - 50px);
+  width: calc(28% - 50px);
   padding: 25px;
-  margin: 7em 11vw 7em 0vw;
+  margin: 7em 11% 7em 0;
   position: relative;
 }
 
@@ -223,7 +330,7 @@ div.list_wrapper {
 .list.servs li:before {
   font-family: FontAwesome;
   font-size: 4em;
-  color: #bbb;
+  color: #26e6e6;
   display: inline-block;
   margin-bottom: 0.4em;
 }
@@ -238,23 +345,7 @@ div.list_wrapper {
   padding-left: 0;
 }
 
-.button.black {
-  display: inline-block;
-  vertical-align: top;
-  background-color: #000;
-  color: #fff;
-}
 
-.list_wrapper .list.servs a.button.black{
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 0.7rem;
-  line-height: 3.2rem;
-}
 
 /*FEATURES*/
 #features {
@@ -267,7 +358,7 @@ div.list_wrapper {
   margin: 0;
   text-align: center;
   background-color: #fff;
-  padding: 7em 14vw;
+  padding: 7em 14%;
 }
 
 #features .section_header .title_light{
@@ -277,12 +368,12 @@ div.list_wrapper {
 }
 
 #features .section_header p.list_title {
-  padding: 0 23em;
+  padding: 0 23%;
   line-height: 2em;
 }
 
 #features ul.block{
-  padding: 7em 10vw 7em 16vw;
+  padding: 7em 10% 7em 16%;
 }
 
 .block li.feature_wrap{
@@ -297,7 +388,7 @@ div.list_wrapper {
 /*iPad block*/
 #features div.slideshow {
   background-color: #000;
-  margin: 0 5vw;
+  margin: 0 5%;
   padding: 10em;
   color: #fff;
   position: relative;
@@ -310,28 +401,18 @@ div.list_wrapper {
 
 section#features div.slideshow p{
   display: inline-block;
-  width: 20vw;
-  margin-right: calc(100% - 20vw);
+  margin-right: 35%;
   margin-bottom: 8rem;
   color: #fff;
 }
 
-a.button_blue {
-  background-color: #26e6e6;
-  border: 2px solid #26e6e6;
-  border-radius: 25px;
-  color: #000;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  margin: 0.5em;
-  cursor: pointer;
-}
+
 
 div.iPad_img{
   position: absolute;
-  top: 19em;
-  right: -9em;
+  top: 17em;
+  left: 45%;
+  margin-left: 7em;
 }
 
 /*PLATFORM*/
@@ -345,7 +426,7 @@ div.platform_wrap ul.block.servs li {
 }
 .title_wrap {
   display: inline-block;
-  width: 41vw;
+  width: 41%;
   text-align: center;
   font-weight: 600;
 }
@@ -408,53 +489,46 @@ div.platform_wrap ul.block.servs li {
 .block li.icon_img.chart:before {
     content: "\f200";
 }
+
+
 /*Quotes*/
+ul.quotes {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
 ul.quotes li {
   display: inline-block;
-  width: 23%;
+  width: calc((30% - 4px) - 6em);
   background-color: #fff;
-  margin: 0 2rem;
-  padding: 2em;
-  min-height: 10em;
-  vertical-align: top;
+  margin: 2em 2em;
+  padding: 4em 2em;
+  vertical-align: middle;
+}
+
+ul.quotes > :first-child {
+  margin-left: 0;
+}
+
+ul.quotes > :last-child{
+  margin-right: 0;
 }
 
 /*--GALLERY--*/
+#gallery h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 1em;
+}
+
 .block_img li{
   position: relative;
   display: inline-block;
   vertical-align: top;
 }
 
-.button_box{
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background-color: rgba(0,0,0,0.5);
-  display: none;
-}
-
-.block_img li:hover .button_box {
-  display: block;
-}
-
-.button_box:before{
-  content: '';
-  width: 1px;
-  height: 100%;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.button_box .button{
-  vertical-align: middle;
-  background-color: #26e6e6;
-  padding: 0.5em 1em;
-  border-radius: 3px;
-}
 
 /*PRICES*/
 section#prices {
@@ -468,6 +542,7 @@ div.prices_wrap {
 
 .plan_active:hover {
   background-color: black;
+  transition: 1s;
   color: #fff;
 }
 
@@ -475,21 +550,7 @@ div.prices_wrap {
   color: #fff;
 }
 
-#prices .plan_active a.button_active {
-  vertical-align: middle;
-  padding: 0.5em 2em;
-  text-transform: uppercase;
-}
 
-#prices .plan_active:hover a.button_active{
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: #26e6e6;
-  padding: 0.5em 2em;
-  border-radius: 25px;
-  color: #000;
-  font-weight: 400;
-}
 
 .plan_active p{
   min-height: 7rem;
@@ -503,18 +564,18 @@ p.big_price {
   color: #000;
   line-height: normal;
   margin-bottom: 0.5em;
-
 }
 
 
 
 /*FOOTER*/
 #footer {
-  height: 80vh;
+  height: 100vh;
   color: #fff;
   vertical-align: top;
-  background: url('../img/bg/bg_footer.png') no-repeat top left;
-  background-size: cover;
+  background: url('../img/bg/bg_footer_trans.png') no-repeat top left,
+              url('../img/bg/bg_footer_text.png') no-repeat top center;
+  background-size: cover, 60%;
   position: relative;
 }
 
@@ -526,10 +587,20 @@ p.big_price {
   background-color: #000;
   display: inline-block;
   position: absolute;
-  top: 40vh;
-  left: 20vw;
   width: 56%;
+  height: auto;
+  top: 40%;
+  left: 20%;
+
   padding: 2em;
+}
+
+@media (max-height: 600px){
+    .footer{
+      height: 20%;
+      overflow: hidden;
+      background-color: green;
+    }
 }
 
 .logo_white{
@@ -546,6 +617,13 @@ p.big_price {
   font-size: 0.8em;
 }
 
+.ident_wrap {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(35% - 4px);
+  text-align: right;
+}
+
 .f_nav_wrap {
   display: inline-block;
   vertical-align: top;
@@ -557,13 +635,6 @@ li.f_nav_wrap a{
   width: 100%;
   padding: 0.2em 0.5em;
   margin: 0.3em 0.5em;
-}
-
-.ident_wrap {
-  display: inline-block;
-  vertical-align: top;
-  width: calc(35% - 4px);
-  text-align: right;
 }
 
 .creator_wrap {
