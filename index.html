@@ -4,8 +4,17 @@
   <head>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/burger.css">
+
     <script src="https://use.fontawesome.com/44cc632ed4.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <!--media-->
+
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/tablet.css">
 
     <meta charset="UTF-8">
     <title>Fjord</title>
@@ -25,7 +34,7 @@
           </div>
           <!--Main menu-->
           <div class="nav_wrap">
-            <nav class="main_nav">
+            <nav class="main_nav" id="main_nav">
               <a href="#services">Services</a>
               <a href="#features">Features</a>
               <a href="#platform">Platform</a>
@@ -38,7 +47,23 @@
               <a href="#" class="button black">Start a project</a>
             </div>
               <!--Burger menu-->
-            <i class="burger">MENU</i>
+              <div class="main_wrap">
+                <a href="#main_nav" class="open_menu">
+                  <div class="burger">
+                    <div class="bar_1"></div>
+                    <div class="bar_2"></div>
+                    <div class="bar_3"></div>
+                  </div>
+                </a>
+                <a href="#" class="close_menu">
+                 <div class="burger">
+                    <div class="bar_1"></div>
+                    <div class="bar_2"></div>
+                    <div class="bar_3"></div>
+                  </div>
+                </a>
+              </div>
+            
           </div>
         </div>
         <!--Header-->
@@ -60,7 +85,7 @@
       <!--SERVICES-->
       <section id="services">
           <!--Features with big icons-->
-          <ul class="block servs">
+          <ul class="block servs screen">
             <li class="icon_img mail">
               <h3 class="list_title">
                 Get a customized email adress and more
@@ -87,6 +112,40 @@
               <p>She gave my mother such a turn, that I have always been convinced
               I am indebted to Miss Betsey for having been born on a Friday.</p>
               <a href="" class="button_active">Get Started </a>
+            </li>
+          </ul>
+
+          <ul class="block servs tablet">
+            <li class="icon_img mail">
+               <div class="tablet_list_wrap">
+                <h3 class="list_title">
+                Get a customized email adress and more
+                </h3>
+                <p>Looking cautiously round, to ascertain that they were not overheard,
+                the two hags cowered nearer to the fire, and chuckled heartily.</p>
+                <a href="" class="button_active">Learn more </a>
+              </div>
+            </li>
+            <li class="icon_img edit">
+              <div class="tablet_list_wrap">
+                <h3 class="list_title">
+                40 Million high quality images
+                </h3>
+                <p>At first, for some time, I was not able to answer him one word;
+                but as he had taken me in his arms I held fast by him, or I should
+                have fallen to the ground.</p>
+                <a href="" class="button_active">Learn more </a>
+              </div>
+            </li>
+            <li class="icon_img card">
+              <div class="tablet_list_wrap">
+                <h3 class="list_title">
+                Create a simple Logo <span> new </span>
+                </h3>
+                <p>She gave my mother such a turn, that I have always been convinced
+                I am indebted to Miss Betsey for having been born on a Friday.</p>
+                <a href="" class="button_active">Get Started </a>
+              </div>
             </li>
           </ul>
       </section>
@@ -134,7 +193,7 @@
       <section id="features">
         <!--Build it beautiful title-->
         <header class="section_header">
-          <h1 class="title_light">
+          <h1 class="title">
             Build it beautiful
           </h1>
           <p class="list_title">Sometimes bold ideas don't require a full website.
@@ -142,7 +201,7 @@
           beautiful way.</p>
         </header>
         <!--Features without icons-->
-        <ul class="block">
+        <ul class="block feat">
           <li class="feature_wrap">
             <h4>
               Dummy Content
@@ -174,14 +233,14 @@
         <!--iPad block-->
         <div class="slideshow">
           <div class="iPad_slide">
-            <h1 class="title_light">
+            <h1 class="title">
             This will change everything
             </h1>
             <p>Your eCommerce website is just the start. Whether you are an
             established business or on the brink of a new idea, Squarespace
             gives you the tools to take your business from online store to
             recognized brand.</p>
-            <a href="" class="button_blue">Get Started</a>
+            <a href="" class="button blue">Get Started</a>
           </div>
           <div class="iPad_img">
             <img src="img/photo/iPad.png" alt="iPad">
@@ -229,7 +288,7 @@
                  <p>This sounded a very good reason, and Alice was quite pleased to
                  know it. 'I never thought of that before!' she said.</p>
                </div>
-                </li>
+              </li>
              <li class="icon_img adjustments">
                <div class="text_wrap">
                  <h4>
@@ -260,26 +319,35 @@
              </li>
            </ul>
          </div>
-           <!--Quotes-->
-           <ul class="quotes">
-             <li>
-               <p>It was some time before he obtained any answer, and the reply,
-                  when made, was unpropitious.</p>
-                <p>Sir Walter Scott</p>
-             </li>
-             <li>
-               <p>This I have produced as a scantling of Jack’s great eloquence
-                 and the force of his reasoning upon such abstruse matters.</p>
-               <p>Jonathan Swift</p>
-             </li>
-             <li>
-               <p>She gave my mother such a turn, that I have always been
-                 convinced I am indebted to Miss Betsey for having been born
-                 on a Friday.</p>
-               <p>Charles Dickens</p>
-             </li>
-           </ul>
       </section>
+
+           <!--Quotes-->
+           <section id="quotes">
+              <ul class="quotes_wrap">
+               <li class="">
+                <p>It was some time before he obtained any answer, and the reply,
+                    when made, was unpropitious.</p>
+                <p>Sir Walter Scott</p>
+                <img src="img/icon/001-right-quote.png" class="right">
+                <img src="img/icon/002-left-quote.png" class="left">
+               </li>
+               <li class="">
+                <p>This I have produced as a scantling of Jack’s great eloquence
+                   and the force of his reasoning upon such abstruse matters.</p>
+                <p>Jonathan Swift</p>
+                <img src="img/icon/001-right-quote.png" class="right">
+                <img src="img/icon/002-left-quote.png" class="left">
+               </li>
+               <li class="">
+                <p>She gave my mother such a turn, that I have always been
+                   convinced I am indebted to Miss Betsey for having been born
+                   on a Friday.</p>
+                <p>Charles Dickens</p>
+                <img src="img/icon/001-right-quote.png" class="right">
+                <img src="img/icon/002-left-quote.png" class="left">
+               </li>
+              </ul>
+           </section>
 
       <!--GALLERY-->
       <section id="gallery">
@@ -288,13 +356,8 @@
               Do it by yourself
             </h4>
             <!--gallery-->
+            
             <ul class="block_img">
-              <li>
-                <img src="img/photo/ph_1.jpg" alt="">
-                <div class="button_box">
-                  <a href="#" class="button">View demo</a>
-                </div>
-              </li>
               <li>
                 <img src="img/photo/ph_2.jpg" alt="">
                 <div class="button_box">
@@ -302,7 +365,13 @@
                 </div>
               </li>
               <li>
-                <img src="img/photo/ph_7.jpg" alt="">
+                <img src="img/photo/ph_3.jpg" alt="">
+                <div class="button_box">
+                  <a href="#" class="button">View demo</a>
+                </div>
+              </li>
+              <li>
+                <img src="img/photo/ph_1.jpg" alt="">
                 <div class="button_box">
                   <a href="#" class="button">View demo</a>
                 </div>
@@ -319,13 +388,25 @@
                   <a href="#" class="button">View demo</a>
                 </div>
               </li>
+              <li>
+                <img src="img/photo/ph_6.jpg" alt="">
+                <div class="button_box">
+                  <a href="#" class="button">View demo</a>
+                </div>
+              </li>
+              <li>
+                <img src="img/photo/ph_7.jpg" alt="">
+                <div class="button_box">
+                  <a href="#" class="button">View demo</a>
+                </div>
+              </li>
             </ul>
       </section>
 
       <!--PRICES-->
       <section id="prices">
         <header class="section_header">
-          <h1 class="title_light">
+          <h1 class="title">
             Join over 1 million customers
           </h1>
         </header>
@@ -417,7 +498,7 @@
         </div>
       </div>
     </footer>
-
+    
   </body>
 
 </html>

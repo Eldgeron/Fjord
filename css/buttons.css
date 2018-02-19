@@ -1,0 +1,132 @@
+.burger {
+    display: inline-block;
+    vertical-align: top;
+    width: 10%;
+    cursor: pointer;
+  }
+
+  .bar_1, .bar_2, .bar_3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0
+  }
+
+  /*header*/
+
+.button {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+  }
+
+.black {
+  background-color: #000;
+  color: #fff;
+}
+
+.button_wrap a.button.black {
+    text-transform: uppercase;
+  	font-size: 0.7rem;
+  	line-height: 2.2rem;
+  	margin: 0 0.5em;
+    padding: 0 1em;
+    box-shadow: 0.2em 0.2em rgba(0, 0, 0, 0.5);
+    min-width: 10em;
+    width: 10em;
+  }
+
+.nav_wrap a.button.black:active {
+    transform: translate(0.2em, 0.2em);
+    box-shadow: none;
+  }
+
+  /*main*/
+  a.button_active {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 400;
+  width: auto;
+  line-height: 2.2em;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+  a.button_active:hover{
+  font-weight: 600;
+}
+
+  /*slideshow*/
+  .list_wrapper .list.servs a.button.black{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    line-height: 3.2rem;
+  }
+
+  /*iPad*/
+  a.button.blue {
+    background-color: #26e6e6;
+    border: 2px solid #26e6e6;
+    border-radius: 25px;
+    color: #000;
+    padding: 15px 32px;
+    margin: 0.5em;
+    cursor: pointer;
+  }
+
+  /*gallery*/
+  .button_box{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      background-color: rgba(0,0,0,0.5);
+      display: none;
+    }
+
+  .block_img li:hover .button_box {
+      display: block;
+    }
+
+  .button_box:before{
+      content: '';
+      width: 1px;
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+  .button_box .button{
+      vertical-align: middle;
+      background-color: #26e6e6;
+      padding: 0.5em 1em;
+      border-radius: 3px;
+    }
+
+  /*prices*/
+.plan_active a.button_active {
+      padding: 0.5em 2em;
+      border-radius: 25px;
+    }
+
+.plan_active:hover a.button_active{
+      transition: 1s;
+      vertical-align: middle;
+      text-transform: uppercase;
+      background-color: #26e6e6;
+      padding: 0.5em 2em;
+      border-radius: 25px;
+      color: #000;
+      font-weight: 400;
+    }
+
+/*Burger button*/
+div.burger {
+  display: none;
+}

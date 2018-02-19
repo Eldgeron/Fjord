@@ -1,0 +1,164 @@
+nav {
+	display: none;
+}
+
+.logo_nav {
+	background-color: rgb(245, 246, 248);
+	width: calc(100% - 10%);
+	padding: 1em 5%;
+}
+
+.button_wrap {
+	width: calc(30% - 4px);
+	margin-right: 8%;
+}
+
+div.burger {
+	display: inline-block;
+	width: calc(10% - 4px);
+}
+
+section {
+	padding: 3em 14%;
+}
+
+
+
+/*SERVICES*/
+
+.block.servs.screen {
+	display: none;
+}
+
+.block.servs.tablet {
+	display: inline-block;
+	width: calc(100% - 2em);
+	padding: 1em;
+}
+
+#services .block.servs li * {
+	min-height: 0;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.block.servs li {
+	background-color: #fff;
+	display: block;
+	vertical-align: top;
+	width: calc((100% - 6em) - 4px);
+	text-align: left;
+	padding: 2em;
+	margin: 1em;
+}
+
+.block.servs li:before {
+   font-family: FontAwesome;
+   display: inline-block;
+   font-size: 5em;
+   color: #26e6e6;
+   display: inline-block;
+   width: calc(20% - 4px);
+   margin-bottom: 0.4em;
+ }
+
+.tablet_list_wrap {
+	display: inline-block;
+	vertical-align: top;
+	width: calc((80% - 24px) - 1em);
+	margin-top: 8px;
+	margin-right: 20px;
+	padding-left: 1em;
+	/*border-bottom: 1px solid;*/
+}
+
+.block.servs li.icon_img.mail:before{
+	content: '\f003';
+}
+
+.block.servs li.icon_img.edit:before{
+	content: '\f03e'
+}
+
+.block.servs li.icon_img.card:before{
+	content: '\f25b';
+}
+
+
+/*Features*/
+
+.section_header{
+	padding: 3em 14%;
+}
+
+#add_srv {
+	background:none;
+	background-color: #26e6e6;
+	height: auto;
+	padding: 0 14%;
+}
+
+div.list_wrapper{
+	width: 100%;
+	padding: 10px;
+	margin: 3em 10% 3em 0;
+}
+
+.section_header .title {
+	font-size: 3.5em;
+}
+
+.list_title {
+	padding: 0;
+}
+
+ul.block.feat {
+	padding: 3em 14%;
+}
+
+.block.feat li {
+	display: block;
+	width: 100%;
+	padding: 1em;
+}
+
+/*iPad block*/
+
+
+.iPad_img {
+	display: none;
+}
+
+.iPad_slide {
+	width: 100%;
+	padding: 1em;
+}
+
+/*quotes*/
+ul.quotes_wrap li {
+	display: block;
+	width: 70%;
+}
+
+/*prices*/
+
+ul.block.prices {
+	display: inline-block;
+	text-align: center;
+}
+
+.block li {
+	display: block;
+	width: 50%;
+}
+
+
+/*footer*/
+.footer {
+	bottom: 0;
+	left: 0;
+	top: auto;
+	width: calc(100% - 4em);
+}
+
+

@@ -27,15 +27,12 @@ p {
   margin-bottom: 0.3em;
 }
 
-.title_light{
-  text-transform: uppercase;
-  font-size: 4.5em;
-  line-height: 1.1em;
-  font-weight: 200;
+.section_header .title{
   text-transform: none;
   margin-bottom: 0.5em;
   letter-spacing: normal;
 }
+
 .subtitle{
 	text-transform: uppercase;
 	font-size: 0.9em;
@@ -54,133 +51,7 @@ p {
   text-transform: uppercase;
 }
 
-
-/*BUTTONS*/
-  /*header*/
-  .main_nav a:hover {
-    background-color: #000;
-    color: #fff;
-  }
-
-  .button.black {
-    display: inline-block;
-    vertical-align: top;
-    background-color: #000;
-    color: #fff;
-  }
-
-  #main_header .nav_wrap .button_wrap a.button.black {
-    text-transform: uppercase;
-  	font-size: 0.7rem;
-  	line-height: 2.2rem;
-  	margin: 0 0.5em;
-    padding: 0 1em;
-  	color: #fff;
-    box-shadow: 0.2em 0.2em rgba(0, 0, 0, 0.5);
-    min-width: 10em;
-    width: 10em;
-  }
-
-  #main_header .nav_wrap a.button.black:active {
-    transform: translate(0.2em, 0.2em);
-    box-shadow: none;
-  }
-
-  /*main*/
-  a.button_active {
-  display: inline-block;
-  vertical-align: middle;
-  width: auto;
-  line-height: 2.2em;
-  font-size: 0.8em;
-  text-transform: uppercase;
-}
-
-  a.button_active:hover{
-  font-weight: 600;
-}
-
-  /*slideshow*/
-  .list_wrapper .list.servs a.button.black{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 0.7rem;
-    line-height: 3.2rem;
-  }
-
-  /*iPad*/
-  a.button_blue {
-    background-color: #26e6e6;
-    border: 2px solid #26e6e6;
-    border-radius: 25px;
-    color: #000;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    margin: 0.5em;
-    cursor: pointer;
-  }
-
-  /*gallery*/
-  .button_box{
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      background-color: rgba(0,0,0,0.5);
-      display: none;
-    }
-
-  .block_img li:hover .button_box {
-      display: block;
-    }
-
-  .button_box:before{
-      content: '';
-      width: 1px;
-      height: 100%;
-      display: inline-block;
-      vertical-align: middle;
-    }
-
-  .button_box .button{
-      vertical-align: middle;
-      background-color: #26e6e6;
-      padding: 0.5em 1em;
-      border-radius: 3px;
-    }
-
-  /*prices*/
-  #prices .plan_active a.button_active {
-      vertical-align: middle;
-      text-transform: uppercase;
-      padding: 0.5em 2em;
-      border-radius: 25px;
-      font-weight: 400;
-    }
-
-  #prices .plan_active:hover a.button_active{
-      transition: 1s;
-      vertical-align: middle;
-      text-transform: uppercase;
-      background-color: #26e6e6;
-      padding: 0.5em 2em;
-      border-radius: 25px;
-      color: #000;
-      font-weight: 400;
-    }
-
-/*Burger button*/
-i.burger {
-  display: none;
-}
-
+ 
 /*LINKS and NAVIGTION*/
 a {
 	display: inline-block;
@@ -192,8 +63,13 @@ a {
 nav {
   display: inline-block;
   vertical-align: top;
-  width: calc(80% - 4px)
+  width: calc(70% - 4px)
 }
+
+ .main_nav a:hover {
+    background-color: #000;
+    color: #fff;
+  }
 
 /*HEADER*/
 #main_header{
@@ -203,16 +79,17 @@ nav {
   background: url("../img/bg/bg_header_1.png") no-repeat left bottom;
   background-size: cover;
 }
+
 .logo_nav{
   position: fixed;
-  width: 70%;
+  width: calc(100% - 30%);
   left: 0;
   top: 0;
-  padding: 3em 20%;
+  padding: 3em 15%;
   background: linear-gradient(rgb(245,246,248), rgba(245,246,248,0.1) );
   z-index: 100;
-
 }
+
 .logo {
   display: inline-block;
   vertical-align: top;
@@ -228,7 +105,8 @@ nav {
 
 .button_wrap {
   display: inline-block;
-  width: calc(20% - 4px);
+  width: calc(30% - 4px);
+  text-align: center;
 }
 
 nav a{
@@ -250,8 +128,8 @@ nav a{
 .mount_wrap{
 	position: absolute;
 	width: 30em;
-	top: 14vh;
-	left: 20vw;
+	top: 14%;
+	left: 20%;
 }
 
 /*MAIN*/
@@ -260,6 +138,11 @@ section {
 }
 
 /*SERVICES*/
+
+.block.servs.tablet {
+  display: none;
+}
+
 .block li {
   display: inline-block;
 	vertical-align: top;
@@ -268,7 +151,8 @@ section {
 	padding: 2em 2%;
 	margin: 0 2%;
 }
- .block.servs li:before {
+
+.block.servs li:before {
    font-family: FontAwesome;
    font-size: 4em;
    color: #26e6e6;
@@ -361,24 +245,25 @@ div.list_wrapper {
   padding: 7em 14%;
 }
 
-#features .section_header .title_light{
+.section_header .title{
   text-transform: none;
   margin-bottom: 0.5em;
   letter-spacing: normal;
 }
 
-#features .section_header p.list_title {
+.section_header p.list_title {
   padding: 0 23%;
   line-height: 2em;
 }
 
-#features ul.block{
+ul.block.feat{
   padding: 7em 10% 7em 16%;
 }
 
 .block li.feature_wrap{
   text-align: left;
 }
+
 .feature_wrap p {
   min-height: 7em;
   height: 7em;
@@ -386,7 +271,7 @@ div.list_wrapper {
 }
 
 /*iPad block*/
-#features div.slideshow {
+div.slideshow {
   background-color: #000;
   margin: 0 5%;
   padding: 10em;
@@ -399,14 +284,12 @@ div.list_wrapper {
   width: 60%;
 }
 
-section#features div.slideshow p{
+div.slideshow p{
   display: inline-block;
   margin-right: 35%;
   margin-bottom: 8rem;
   color: #fff;
 }
-
-
 
 div.iPad_img{
   position: absolute;
@@ -424,6 +307,7 @@ div.platform_wrap ul.block.servs li {
   display: inline-block;
   text-align: left;
 }
+
 .title_wrap {
   display: inline-block;
   width: 41%;
@@ -434,8 +318,6 @@ div.platform_wrap ul.block.servs li {
 .title_wrap *{
   margin-bottom: 2em;
 }
-
-
 
 /*Icons*/
 .block.servs li.icon_img.mail:before{
@@ -492,13 +374,19 @@ div.platform_wrap ul.block.servs li {
 
 
 /*Quotes*/
-ul.quotes {
+#quotes {
+  margin: 0;
+  padding: 0;
+}
+
+ul.quotes_wrap {
   display: inline-block;
   width: 100%;
   text-align: center;
 }
 
-ul.quotes li {
+ul.quotes_wrap li {
+  position: relative;
   display: inline-block;
   width: calc((30% - 4px) - 6em);
   background-color: #fff;
@@ -507,28 +395,47 @@ ul.quotes li {
   vertical-align: middle;
 }
 
-ul.quotes > :first-child {
-  margin-left: 0;
+img.left {
+  position: absolute;
+  width: 30px;
+  top: 3%;
+  left: 3%;
 }
 
-ul.quotes > :last-child{
-  margin-right: 0;
+img.right {
+  position: absolute;
+  width: 30px;
+  bottom: 3%;
+  right: 3%;
 }
 
 /*--GALLERY--*/
 #gallery h4 {
   text-align: center;
   text-transform: uppercase;
-  font-weight: 800;
+  font-size: 1.5em;
+  font-weight: 900;
   margin-bottom: 1em;
+}
+
+.block_img {
+  display: inline-block;
+  vertical-align: top;
+
+  line-height: 0;
+  column-count: 3;
+  column-gap: 0;
 }
 
 .block_img li{
   position: relative;
-  display: inline-block;
-  vertical-align: top;
+  margin: 8px 4px;
 }
 
+.block_img li img {
+  width: 100%;
+  height: auto;
+}
 
 /*PRICES*/
 section#prices {
@@ -537,7 +444,7 @@ section#prices {
 }
 
 div.prices_wrap {
-  padding:7em 14vw;
+  padding:7em 14%;
 }
 
 .plan_active:hover {
@@ -546,11 +453,9 @@ div.prices_wrap {
   color: #fff;
 }
 
-#prices .plan_active:hover p{
+.plan_active:hover p{
   color: #fff;
 }
-
-
 
 .plan_active p{
   min-height: 7rem;
@@ -565,8 +470,6 @@ p.big_price {
   line-height: normal;
   margin-bottom: 0.5em;
 }
-
-
 
 /*FOOTER*/
 #footer {
@@ -591,16 +494,7 @@ p.big_price {
   height: auto;
   top: 40%;
   left: 20%;
-
   padding: 2em;
-}
-
-@media (max-height: 600px){
-    .footer{
-      height: 20%;
-      overflow: hidden;
-      background-color: green;
-    }
 }
 
 .logo_white{
